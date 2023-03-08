@@ -7,12 +7,9 @@ int main()
     int age = 23;
     int money = 650;
 
-    if (age > 21)
+    if (age > 21 && money > 500)
     {
-        if (money > 500)
-        {
-            cout << "you are allowed " << endl;
-        }
+        cout << "you are allowed " << endl;
     }
     return 0;
 }
