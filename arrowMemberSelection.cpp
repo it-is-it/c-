@@ -6,14 +6,13 @@ class sally{
     sally();
     void printCrap();
     protected:
-    public:
+    private:
 };
 
 int main()
 {
-	sally so;
-    Cout<<"omg wtf on my shoe?";
-    sally *sp = &so;
+	sally sallyObject;
+    sally *sallyPointer = &sallyObject;
 
     sallyObject.printCrap(); //accessinng through object
     sallyPointer->printCrap(); //accessing through pointer
@@ -22,9 +21,9 @@ int main()
 }
 
 sally::sally(){
-    cout<<"Is this the constructor? ....yeah this is"<<endl;
-}
-sally::~sally(){
-    cout<<"Is this the deconstructor? ....yeah this is"<<endl;
+
 }
 
+void sally::printCrap(){
+    cout<<"What do you need, man?"<<endl;
+}
